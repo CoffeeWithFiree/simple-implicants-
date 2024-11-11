@@ -24,8 +24,8 @@ Razr = int(log2(len(func)))
 list_ = []
 for i in range(len(func)):
     list_.append([func[i], list(map(int, bin(i)[2:]))])
-    if len(list_[i][1]) != 5:
-        while len(list_[i][1]) != 5:
+    if len(list_[i][1]) != Razr:
+        while len(list_[i][1]) != Razr:
             list_[i][1].insert(0, 0)
 
 dict_ = dict()
